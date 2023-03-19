@@ -4,7 +4,7 @@ interface Props {
   items: string[]
   heading: string
   // (item: string) => void
-  onSelectItem: (item: string) => void
+  onSelectItem: (item: string) => void // similar to onClick
 }
 function ListGroup({ items, heading, onSelectItem }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(-1)
